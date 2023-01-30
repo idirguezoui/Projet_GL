@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap5 %}
+
+  {% block css %}   
+    <link rel="stylesheet" href="{% static 'style/first_page.css' %}"/>
+  {% endblock css %}
+
+{% block title %}
+  <title>Acceuil</title>
+{% endblock title %}
+
+{% block content %}
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
+          <h1 class="logo me-auto me-lg-0"><a href="index.html">EduSoutien</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <a href="{% url 'sign_in' %}" class="get-started-btn scrollto">Log in</a>
+        </div>
+      </div>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          <h1>Cours de soutien - Devinez grand</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repellat veritatis pariatur dolorem sunt recusandae officia exercitationem dolorum quasi! Asperiores commodi error at voluptate voluptas eveniet expedita ea eum eos.</h2>
+          <a href="{% url 'sign_up' %}" class="join_us">Join us</a>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+{% endblock content %}

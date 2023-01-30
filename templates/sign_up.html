@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap5 %}
+
+  {% block css %}   
+    <link rel="stylesheet" href="{% static 'style/sign_up.css' %}"/>
+  {% endblock css %}
+  {% block title %}
+    <title>Sign up</title>
+  {% endblock title %}
+
+
+  {% block content %}
+
+      <!-- ======= Header ======= -->
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-center">
+          <a class="H1">EduSoutien</a>
+        </div>
+      </nav>
+    
+<div class="login_form_wrapper">
+    <div class="container" >
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-md-offset-2">
+                <!-- login_wrapper -->
+                <form method="POST">
+                  {% csrf_token %}
+                    <div class="login_wrapper">
+                    <div class="row">
+                    <div class="formsix-pos">
+                        <div class="form-group i-nom">
+                            <input type="text" class="form-control" required="" id="email2" placeholder="Nom *">
+                        </div>
+                    </div>
+                    <div class="formsix-pos">
+                      <div class="form-group i-prenom">
+                          <input type="text" class="form-control" required="" id="email2" placeholder="Prénom *">
+                      </div>
+                  </div>
+                    <div class="formsix-pos">
+                      <div class="form-group i-email">
+                          <input type="email" class="form-control" required id="email2" placeholder="E-mail *" name="gmail">
+                      </div>
+                      <div class="formsix-pos">
+                        <div class="form-group i-numero_de_telephone">
+                            <input type="number" class="form-control" required="" id="email2" placeholder="Numero de telephone *" name="tlf">
+                        </div>
+                      </div>
+                          <div class="mt-2">
+                            <p class="seti">Wilaya</p>
+                            {{adresse.wilaya}}
+                          </div>
+                          <div>
+                            <p class="seti">dairas</p>
+                            {{adresse.dairas}}
+                          </div>
+                          <div class="mb-2">
+                            <p class="seti">commune</p>
+                            {{adresse.communes}}
+                          </div>
+                        <div class="formsix-pos">
+                          <div class="form-group i-adress">
+                              <input type="text" class="form-control" required id="email2" placeholder="Adresse *" name="adesse">
+                        </div>
+                        <div class="formsix-e">
+                          <div class="form-group i-mot_de_passe">
+                              <input type="password" class="form-control" required id="password1" placeholder="Mot de passe *" name="password">
+                          </div> 
+                          <div class="formsix-e">
+                            <div class="form-group i-mot_de_passe_confirmation">
+                                <input type="password" class="form-control" required id="password2" placeholder="Confirmer le mot de passe *" name="password">
+                            </div>
+<!-- ------------------------------------ Case du formulaire -------------------------------------------- -->
+                    <div class="login_btn_wrapper">
+                        <button type="submit" class="btn btn-primary"> S'inscrire </button>
+                    </div>
+                </form>
+                    <div class="login_message">
+                        <p>Vous avez deja un compte? <a href="{% url 'sign_in' %}"> Se connecter </a> </p>
+                    </div>
+                </div>
+                <!-- /.login_wrapper-->
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="{% static 'JS/main.js' %}"></script>
+
+  {% endblock content %}
+
+</html>

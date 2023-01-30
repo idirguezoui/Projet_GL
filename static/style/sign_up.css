@@ -1,0 +1,203 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/aa.jpg") top center;
+    background-size: repeat;
+    position: relative;
+}
+#header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding-top : 20px ;
+    padding-bottom: 30px;
+}
+  
+  #header.header-scrolled,
+  #header.header-inner-pages {
+    background: rgba(40, 40, 40, 0.9);
+  }
+  
+  #header .logo {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  
+  #header .logo a {
+    color: #fff;
+  }
+  
+  #header .logo img {
+    max-height: 40px;
+  }
+  
+  @media (max-width: 992px) {
+    #header {
+      border: 0;
+      padding: 15px 0;
+    }
+  }
+  .login_form_wrapper {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;  
+}
+
+.login_wrapper {
+    float: center;
+    width: 100%;
+    background: transparent;
+    padding: 50px;
+}
+
+.login_wrapper a.btn {
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    padding: 6px 25px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    text-align: left;
+    border-radius: 5px;
+    background: #4385f5;
+    font-size: 16px;
+    border: 1px solid #4385f5;
+}
+
+
+.login_wrapper a i {
+    float: right;
+    margin: 0;
+    line-height: 35px;
+}
+
+
+.login_wrapper h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #111;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+
+.login_wrapper .formsix-pos, .formsix-e {
+    position: relative;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+.login_wrapper .form-control {
+    height: 53px;
+    padding: 15px 20px;
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: none;
+    font-family: 'Roboto';
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background-color: #fafafa;
+}
+
+.login_wrapper .form-control:focus {
+    color: #999;
+    background-color: fafafa;
+    border: 1px solid #4285f4 !important;
+}
+
+
+.login_btn_wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.login_btn_wrapper a.login_btn {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login_message p {
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+
+p {
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.login_wrapper a.login_btn:hover {
+    background-color: #2c6ad4;
+    border-color: #2c6ad4;
+}
+
+.login_wrapper a.btn:hover {
+    background-color: #2c6ad4;
+    border-color: #2c6ad4;
+}
+
+#button_gender{
+    font-family:'Roboto' ;
+    color: #595151;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    font-size: 15px;
+    margin-left: 19px;
+
+}
+.radio-inline{
+    color: #999999;
+    margin-left: 30px;
+}
+.form-select {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #999;
+}
+#select-wilaya {
+    font-family:'Roboto' ;
+    color: #595151;
+    font-size: 15px ;
+}
+
+ #select-commune {
+    font-family:'Roboto' ;
+    color: #595151;
+    font-size: 15px ;
+}
+.H1{
+    text-decoration:none;
+    font-size: 35px;
+    color: black;
+}
+.seti{
+    margin:0;
+}
+select {
+    width: 60%;
+    height : 30px;
+}
+#select-commune label , #select-wilaya label{
+    margin-left: 0px;
+}
+#country {
+    margin-left: 40px;
+}
